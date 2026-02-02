@@ -69,11 +69,14 @@
             color: #555;
             text-decoration: none;
             transition: color 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 5px;
         }
         .contact-info a:hover { color: var(--accent-color); text-decoration: underline; }
-        .contact-info i { margin-right: 5px; color: #6a737d; }
+        .contact-info i { color: #6a737d; }
 
-        .social-links { margin-top: 10px; }
+        .social-links { margin-top: 15px; }
         .social-links a {
             color: #586069;
             font-size: 1.5em;
@@ -169,7 +172,7 @@
             .container { margin: 0; padding: 0; }
             header, section { border-radius: 0; border-left: 0; border-right: 0; }
             .item-header { flex-direction: column; }
-            .contact-info { flex-direction: column; gap: 5px; }
+            .contact-info { flex-direction: column; gap: 8px; align-items: center; }
         }
     </style>
 </head>
@@ -186,12 +189,16 @@
             
             <!-- Email Section -->
             <div class="contact-info">
-                <a href="mailto:universuen@gmail.com" title="Personal Email">
+                <a href="mailto:universuen@gmail.com" title="Personal (Preferred)">
                     <i class="fas fa-envelope"></i> universuen@gmail.com
                 </a>
-                <a href="mailto:sun.yu@u.nus.edu" title="Academic Email">
+                <a href="mailto:sun.yu@u.nus.edu" title="Academic">
                     <i class="fas fa-university"></i> sun.yu@u.nus.edu
                 </a>
+                <!-- Listed last as per preference -->
+                <!-- <a href="mailto:yvsun@tencent.com" title="Work (Please prefer other emails)">
+                    <i class="fas fa-briefcase"></i> yvsun@tencent.com
+                </a> -->
             </div>
 
             <!-- Social Links -->
@@ -208,7 +215,10 @@
                 I am a Machine Learning Engineer at <strong>Weixin Group, Tencent</strong>. My current work focuses on the full lifecycle of Multimodal Large Language Models (MLLMs)—from architecting pre-training strategies to fine-tuning and post-training optimization—to enhance content understanding and safety within the WeChat ecosystem.
             </p>
             <p>
-                Previously, I worked at ByteDance Singapore on TikTok content safety. My academic background encompasses Cyberspace Security and Artificial Intelligence, with research interests in <strong>MLLMs</strong>, <strong>Generative Models</strong>, <strong>Content Understanding</strong>, and <strong>Out-of-Distribution Generalization</strong>.
+                I hold a <strong>Master's degree in Artificial Intelligence</strong> from the <strong>National University of Singapore (NUS)</strong> and a <strong>Bachelor's degree in Cyberspace Security</strong> from <strong>Wuhan University (WHU)</strong>. Previously, I was a Machine Learning Engineer Intern at ByteDance Singapore, working on TikTok content safety.
+            </p>
+            <p>
+                My research interests include <strong>MLLMs</strong>, <strong>Generative Models</strong>, <strong>Content Understanding</strong>, and <strong>Out-of-Distribution Generalization</strong>.
             </p>
         </section>
 
