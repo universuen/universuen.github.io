@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yu SUN | Machine Learning Engineer</title>
+    <meta name="description" content="Personal website of Yu SUN, Machine Learning Engineer at Tencent.">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            /* Color Palette */
+            --primary-color: #2c3e50;
+            --accent-color: #0366d6; /* GitHub Blue */
+            --bg-color: #f6f8fa;
+            --text-color: #24292e;
+            --section-bg: #ffffff;
+            --border-color: #e1e4e8;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Header / Profile Section */
+        header {
+            background-color: var(--section-bg);
+            padding: 40px;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--section-bg);
+            box-shadow: 0 0 0 1px var(--border-color);
+            margin-bottom: 20px;
+        }
+
+        h1 { margin: 10px 0 5px; color: var(--primary-color); font-size: 2em; }
+        .subtitle { font-size: 1.1em; color: #586069; margin-bottom: 20px; }
+
+        .social-links { margin-top: 15px; }
+        .social-links a {
+            color: #586069;
+            font-size: 1.5em;
+            margin: 0 12px;
+            transition: color 0.2s;
+            text-decoration: none;
+        }
+        .social-links a:hover { color: var(--accent-color); }
+
+        /* Sections */
+        section {
+            background-color: var(--section-bg);
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+        }
+
+        h2 {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+            color: var(--primary-color);
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+
+        /* Lists & Items */
+        .item { margin-bottom: 25px; }
+        .item:last-child { margin-bottom: 0; }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+        }
+        
+        .item-title { font-weight: 600; color: var(--primary-color); font-size: 1.1em; }
+        .item-date { color: #6a737d; font-size: 0.9em; font-family: monospace; }
+        .item-desc { margin-top: 5px; color: #444; }
+
+        /* Badges for Skills */
+        .skill-tag {
+            display: inline-block;
+            background-color: #f1f8ff;
+            color: #0366d6;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin: 0 5px 5px 0;
+            border: 1px solid #c8e1ff;
+        }
+
+        /* Publications */
+        .publication { margin-bottom: 20px; padding-left: 15px; border-left: 3px solid transparent; }
+        .publication:hover { border-left: 3px solid var(--accent-color); }
+        
+        .pub-title { 
+            font-weight: 600; 
+            color: #0366d6; 
+            text-decoration: none; 
+            font-size: 1.05em;
+        }
+        .pub-title:hover { text-decoration: underline; }
+        
+        .pub-authors { color: #24292e; font-size: 0.95em; margin: 4px 0; }
+        .pub-venue { color: #d05d05; font-weight: 500; font-size: 0.9em; }
+        
+        .tag {
+            display: inline-block;
+            background: #eee;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.75em;
+            vertical-align: middle;
+            margin-right: 6px;
+        }
+        .tag.preprint { background: #fff5b1; color: #b08800; border: 1px solid #fae69e; }
+        .tag.conf { background: #d1f7c4; color: #2ea44f; border: 1px solid #bef5cb; }
+        
+        .note { font-size: 0.85em; color: #666; font-style: italic; margin-bottom: 15px; }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #6a737d;
+            font-size: 0.85em;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 600px) {
+            .container { margin: 0; padding: 0; }
+            header, section { border-radius: 0; border-left: 0; border-right: 0; }
+            .item-header { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <img src="https://avatars.githubusercontent.com/u/45564858?v=4" alt="Yu SUN" class="profile-img">
+            <h1>Yu SUN</h1>
+            <p class="subtitle">Machine Learning Engineer @ Tencent</p>
+            <p style="font-size: 0.95em; color: #555; max-width: 600px; margin: 0 auto 20px;">
+                Specializing in <strong>Multimodal Large Language Models (MLLMs)</strong>, including pre-training, post-training, and large-scale application deployment.
+            </p>
+            
+            <div class="social-links">
+                <a href="mailto:universuen@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/universuen" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://scholar.google.com/citations?user=R-PB6rAAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+            </div>
+        </header>
+
+        <!-- About / Research Interests -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a Machine Learning Engineer at <strong>Weixin Group, Tencent</strong>. My current work focuses on the full lifecycle of Multimodal Large Language Models (MLLMs)—from architecting pre-training strategies to fine-tuning and post-training optimization—to enhance content understanding and safety within the WeChat ecosystem.
+            </p>
+            <p>
+                Previously, I worked at ByteDance Singapore on TikTok content safety. My academic background encompasses Cyberspace Security and Artificial Intelligence, with research interests in <strong>Generative Models</strong>, <strong>Adversarial Learning</strong>, and <strong>Out-of-Distribution Generalization</strong>.
+            </p>
+        </section>
+
+        <!-- Technical Expertise -->
+        <section id="skills">
+            <h2>Technical Expertise</h2>
+            <div style="margin-top: 15px;">
+                <span class="skill-tag">Vision Language Models</span>
+                <span class="skill-tag">Model Training Framework</span>
+                <span class="skill-tag">SFT</span>
+                <span class="skill-tag">RLHF</span>
+                <span class="skill-tag">Content Safety & Risk Detection</span>
+                <span class="skill-tag">Generative Adversarial Networks (GANs)</span>
+                <span class="skill-tag">Diffusion Models</span>
+                <span class="skill-tag">PyTorch / DeepSpeed</span>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Weixin Group, Tencent</span>
+                    <span class="item-date">Present</span>
+                </div>
+                <div class="item-desc">
+                    <strong>Machine Learning Engineer</strong><br>
+                    Focusing on WeChat content safety by developing and deploying Multimodal Large Language Models (MLLMs) for advanced content understanding and risk detection.
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">ByteDance Singapore</span>
+                    <span class="item-date">Internship</span>
+                </div>
+                <div class="item-desc">
+                    <strong>Machine Learning Engineer Intern</strong><br>
+                    Worked on machine learning solutions for TikTok content safety and moderation.
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education">
+            <h2>Education</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">National University of Singapore (NUS)</span>
+                    <span class="item-date">2022 - 2024</span>
+                </div>
+                <div class="item-desc">
+                    Master of Computing in Artificial Intelligence
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Wuhan University (WHU)</span>
+                    <span class="item-date">2018 - 2022</span>
+                </div>
+                <div class="item-desc">
+                    B.Eng. in Cyberspace Security
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications -->
+        <section id="publications">
+            <h2>Publications</h2>
+            <p class="note">* Indicates Equal Contribution / Co-first Authorship</p>
+
+            <!-- ICML 2026 Submission -->
+            <div class="publication">
+                <span class="tag preprint">Submitted to ICML 2026</span>
+                <div><a href="https://arxiv.org/abs/2601.21610" class="pub-title" target="_blank">WMVLM: Evaluating Diffusion Model Image Watermarking via Vision-Language Models</a></div>
+                <div class="pub-authors">Zijin Yang*, <strong>Yu Sun*</strong>, Kejiang Chen, Jiawei Zhao, Jun Jiang, Weiming Zhang, Nenghai Yu</div>
+                <div class="pub-venue">arXiv preprint arXiv:2601.21610 (2026)</div>
+            </div>
+
+            <!-- VGAN-BL -->
+            <div class="publication">
+                <span class="tag conf">Neural Comput & App</span>
+                <div><a href="https://link.springer.com/article/10.1007/s00521-023-09180-x" class="pub-title" target="_blank">VGAN-BL: imbalanced data classification based on generative adversarial network and biased loss</a></div>
+                <div class="pub-authors">H Ding*, <strong>Y Sun*</strong>, N Huang, X Cui</div>
+                <div class="pub-venue">Neural Computing and Applications (2024)</div>
+            </div>
+
+            <!-- TMG-GAN -->
+            <div class="publication">
+                <span class="tag conf">IEEE TIFS</span>
+                <div><a href="https://ieeexplore.ieee.org/abstract/document/10312801/" class="pub-title" target="_blank">TMG-GAN: Generative adversarial networks-based imbalanced learning for network intrusion detection</a></div>
+                <div class="pub-authors">H Ding, <strong>Y Sun</strong>, N Huang, Z Shen, X Cui</div>
+                <div class="pub-venue">IEEE Transactions on Information Forensics and Security (2023)</div>
+            </div>
+
+            <!-- RVGAN-TL -->
+            <div class="publication">
+                <span class="tag conf">Info Sciences</span>
+                <div><a href="https://www.sciencedirect.com/science/article/abs/pii/S0020025523001615" class="pub-title" target="_blank">RVGAN-TL: A generative adversarial networks and transfer learning-based hybrid approach</a></div>
+                <div class="pub-authors">H Ding*, <strong>Y Sun*</strong>, N Huang, Z Shen, Z Wang, A Iftekhar, X Cui</div>
+                <div class="pub-venue">Information Sciences (2023)</div>
+            </div>
+
+            <!-- RGAN-EL -->
+            <div class="publication">
+                <span class="tag conf">IP&M</span>
+                <div><a href="https://www.sciencedirect.com/science/article/abs/pii/S0306457322003363" class="pub-title" target="_blank">RGAN-EL: A GAN and ensemble learning-based hybrid approach for imbalanced data classification</a></div>
+                <div class="pub-authors">H Ding*, <strong>Y Sun*</strong>, Z Wang, N Huang, Z Shen, X Cui</div>
+                <div class="pub-venue">Information Processing & Management (2023)</div>
+            </div>
+            
+            <!-- Equivariant Graph -->
+            <div class="publication">
+                <span class="tag preprint">Preprint</span>
+                <div><a href="https://openreview.net/forum?id=9L1Ts8t66YK" class="pub-title" target="_blank">Towards equivariant graph contrastive learning via cross-graph augmentation</a></div>
+                <div class="pub-authors">Z Liu, A Zhang, <strong>Y Sun</strong>, Y Li, Y Shi, S Li, X Wang, X He, TS Chua</div>
+                <div class="pub-venue">arXiv preprint (2023)</div>
+            </div>
+
+        </section>
+
+        <!-- Projects -->
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="item">
+                <div class="item-header">
+                    <a href="https://github.com/universuen/universal_gravitation" target="_blank" style="text-decoration:none; color:inherit;">
+                        <span class="item-title">universal_gravitation <i class="fab fa-github" style="font-size:0.9em"></i></span>
+                    </a>
+                </div>
+                <div class="item-desc">A tiny physics engine written in Python.</div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <a href="https://github.com/universuen/zero_player_games" target="_blank" style="text-decoration:none; color:inherit;">
+                        <span class="item-title">zero_player_games <i class="fab fa-github" style="font-size:0.9em"></i></span>
+                    </a>
+                </div>
+                <div class="item-desc">Experiments with zero-player game simulations.</div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Yu SUN. Hosted on GitHub Pages.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
