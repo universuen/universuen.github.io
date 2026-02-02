@@ -54,9 +54,26 @@
         }
 
         h1 { margin: 10px 0 5px; color: var(--primary-color); font-size: 2em; }
-        .subtitle { font-size: 1.1em; color: #586069; margin-bottom: 20px; }
+        .subtitle { font-size: 1.1em; color: #586069; margin-bottom: 15px; }
 
-        .social-links { margin-top: 15px; }
+        /* Contact Info Section */
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+        .contact-info a {
+            color: #555;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .contact-info a:hover { color: var(--accent-color); text-decoration: underline; }
+        .contact-info i { margin-right: 5px; color: #6a737d; }
+
+        .social-links { margin-top: 10px; }
         .social-links a {
             color: #586069;
             font-size: 1.5em;
@@ -152,6 +169,7 @@
             .container { margin: 0; padding: 0; }
             header, section { border-radius: 0; border-left: 0; border-right: 0; }
             .item-header { flex-direction: column; }
+            .contact-info { flex-direction: column; gap: 5px; }
         }
     </style>
 </head>
@@ -160,15 +178,24 @@
     <div class="container">
         <!-- Header -->
         <header>
-            <img src="https://avatars.githubusercontent.com/u/52519513?v=4" alt="Yu SUN" class="profile-img">
-            <h1>Yu SUN</h1>
-            <p class="subtitle">Machine Learning Engineer @ Tencent</p>
-            <!-- <p style="font-size: 0.95em; color: #555; max-width: 600px; margin: 0 auto 20px;">
-                Specializing in <strong>Multimodal Large Language Models (MLLMs)</strong>, including pre-training, post-training, and large-scale application deployment.
-            </p> -->
+            <!-- Using universuen.png ensures it always syncs with your GitHub profile -->
+            <img src="https://github.com/universuen.png" alt="Yu SUN" class="profile-img">
             
+            <h1>Yu SUN</h1>
+            <p class="subtitle">Machine Learning Engineer @ Weixin Group, Tencent</p>
+            
+            <!-- Email Section -->
+            <div class="contact-info">
+                <a href="mailto:universuen@gmail.com" title="Personal Email">
+                    <i class="fas fa-envelope"></i> universuen@gmail.com
+                </a>
+                <a href="mailto:sun.yu@u.nus.edu" title="Academic Email">
+                    <i class="fas fa-university"></i> sun.yu@u.nus.edu
+                </a>
+            </div>
+
+            <!-- Social Links -->
             <div class="social-links">
-                <a href="mailto:universuen@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
                 <a href="https://github.com/universuen" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
                 <a href="https://scholar.google.com/citations?user=R-PB6rAAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
             </div>
@@ -181,7 +208,7 @@
                 I am a Machine Learning Engineer at <strong>Weixin Group, Tencent</strong>. My current work focuses on the full lifecycle of Multimodal Large Language Models (MLLMs)—from architecting pre-training strategies to fine-tuning and post-training optimization—to enhance content understanding and safety within the WeChat ecosystem.
             </p>
             <p>
-                Previously, I worked at ByteDance Singapore on TikTok content safety. My academic background encompasses Cyberspace Security and Artificial Intelligence, with research interests in <strong>Generative Models</strong>, <strong>Adversarial Learning</strong>, and <strong>Out-of-Distribution Generalization</strong>.
+                Previously, I worked at ByteDance Singapore on TikTok content safety. My academic background encompasses Cyberspace Security and Artificial Intelligence, with research interests in <strong>MLLMs</strong>, <strong>Generative Models</strong>, <strong>Content Understanding</strong>, and <strong>Out-of-Distribution Generalization</strong>.
             </p>
         </section>
 
@@ -189,7 +216,7 @@
         <section id="skills">
             <h2>Technical Expertise</h2>
             <div style="margin-top: 15px;">
-                <span class="skill-tag">Vision Language Models</span>
+                <span class="skill-tag">MLLMs</span>
                 <span class="skill-tag">Model Training Framework</span>
                 <span class="skill-tag">SFT</span>
                 <span class="skill-tag">RLHF</span>
@@ -206,7 +233,7 @@
             <div class="item">
                 <div class="item-header">
                     <span class="item-title">Weixin Group, Tencent</span>
-                    <span class="item-date">Present</span>
+                    <span class="item-date">2024-Present</span>
                 </div>
                 <div class="item-desc">
                     <strong>Machine Learning Engineer</strong><br>
@@ -215,8 +242,8 @@
             </div>
             <div class="item">
                 <div class="item-header">
-                    <span class="item-title">ByteDance Singapore</span>
-                    <span class="item-date">Internship</span>
+                    <span class="item-title">TikTok, ByteDance Singapore</span>
+                    <span class="item-date">2022-2024</span>
                 </div>
                 <div class="item-desc">
                     <strong>Machine Learning Engineer Intern</strong><br>
